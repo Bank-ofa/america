@@ -5,31 +5,34 @@ document.addEventListener("DOMContentLoaded", function () {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const emailInput    = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
-
+    var emailInput    = document.getElementById("email");
+    var passwordInput = document.getElementById("password");
     if (!emailInput || !passwordInput) return;
 
-    const email    = emailInput.value.trim().toLowerCase();
-    const password = passwordInput.value.trim();
+    var email    = emailInput.value.trim().toLowerCase();
+    var password = passwordInput.value.trim();
 
     if (typeof usuarios === "undefined") {
-      alert("Error interno: datos no cargados.");
+      alert("Error: data.js no fue cargado. Verifica el orden de los scripts.");
       return;
     }
 
-    const usuario = usuarios.find(function (user) {
-      if (!user || !user.email) return false;
-      return String(user.email).trim().toLowerCase() === email;
-    });
+    var usuario = null;
+    for (var i = 0; i < usuarios.length; i++) {
+      var u = usuarios[i];
+      if (u && u.email && u.email.trim().toLowerCase() === email) {
+        usuario = u;
+        break;
+      }
+    }
 
-    const passOk = usuario && String(usuario.password).trim() === String(password).trim();
+    var passOk = usuario && String(usuario.password).trim() === password;
 
     if (usuario && passOk) {
       localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
       window.location.href = "Cuenta.html";
     } else {
-      alert("Correo o contraseña incorrectos.");
+      alert("Correo o contrasena incorrectos.");
     }
   });
 });
