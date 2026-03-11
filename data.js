@@ -1,4 +1,4 @@
-const usuarios = [
+var usuarios = [
   {
     email: "edwincungachi56@gmail.com",
     password: "7528",
@@ -25,11 +25,11 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Deposito inicial",          fecha: "13/6/2025",  monto: "+$200000" },
-        { descripcion: "Deposito wester union",     fecha: "16/6/2025",  monto: "+$500" },
-        { descripcion: "Deposito wester union",     fecha: "16/6/2025",  monto: "+$1500" },
-        { descripcion: "Deposito Bank of america",  fecha: "23/6/2025",  monto: "+$500" },
-        { descripcion: "Fitz Gerald law company",   fecha: "28/6/2025",  monto: "+$500" }
+        { descripcion: "Deposito inicial",         fecha: "13/6/2025", monto: "+$200000" },
+        { descripcion: "Deposito wester union",    fecha: "16/6/2025", monto: "+$500" },
+        { descripcion: "Deposito wester union",    fecha: "16/6/2025", monto: "+$1500" },
+        { descripcion: "Deposito Bank of america", fecha: "23/6/2025", monto: "+$500" },
+        { descripcion: "Fitz Gerald law company",  fecha: "28/6/2025", monto: "+$500" }
       ]
     }
   },
@@ -89,8 +89,8 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Company Kelly Services",    fecha: "11/11/2024", monto: "+$3000" },
-        { descripcion: "Deposito Bank of america",  fecha: "21/6/2025",  monto: "+$1000" }
+        { descripcion: "Company Kelly Services",   fecha: "11/11/2024", monto: "+$3000" },
+        { descripcion: "Deposito Bank of america", fecha: "21/6/2025",  monto: "+$1000" }
       ]
     }
   },
@@ -188,6 +188,19 @@ const usuarios = [
       movimientos: [
         { descripcion: "Fitz Gerald law company", fecha: "15/7/2025", monto: "+$2000" }
       ]
+    }
+  },
+  {
+    email: "josemanuel77n04@gmail.com",
+    password: "2138",
+    nombre: "JOSE MANUEL SUAREZ DIAZ",
+    cuenta: {
+      nombre: "Cuenta Ahorros",
+      numero: "4117 7400 8839 3826",
+      saldo: 0,
+      creditos: 0,
+      prestamos: 0,
+      movimientos: []
     }
   },
   {
