@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.getElementById("loginForm");
+  var loginForm = document.getElementById("loginForm");
   if (!loginForm) return;
 
   loginForm.addEventListener("submit", function (e) {
@@ -12,23 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
     var email    = emailInput.value.trim().toLowerCase();
     var password = passwordInput.value.trim();
 
-    if (typeof usuarios === "undefined") {
-      alert("Error: data.js no fue cargado. Verifica el orden de los scripts.");
+    if (typeof usuarios === "undefined" || !usuarios) {
+      alert("Error: data.js no fue cargado correctamente.");
       return;
     }
 
     var usuario = null;
     for (var i = 0; i < usuarios.length; i++) {
-      var u = usuarios[i];
-      if (u && u.email && u.email.trim().toLowerCase() === email) {
-        usuario = u;
+      if (usuarios[i] && usuarios[i].email &&
+          usuarios[i].email.trim().toLowerCase() === email) {
+        usuario = usuarios[i];
         break;
       }
     }
 
-    var passOk = usuario && String(usuario.password).trim() === password;
-
-    if (usuario && passOk) {
+    if (usuario && String(usuario.password).trim() === password) {
       localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
       window.location.href = "Cuenta.html";
     } else {
