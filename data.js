@@ -1,5 +1,20 @@
 const usuarios = [
   {
+    email: "edwincungachi56@gmail.com",
+    password: "7528",
+    nombre: "EDWIN RODRIGO CUNGACHI TACURI",
+    cuenta: {
+      nombre: "Cuenta Ahorros",
+      numero: "4177 7300 8891 6385",
+      saldo: 16874,
+      creditos: 0,
+      prestamos: 0,
+      movimientos: [
+        { descripcion: "Depósito inicial", fecha: "26/02/2026", monto: "+$16874" }
+      ]
+    }
+  },
+  {
     email: "sagitario.lopez124@gmail.com",
     password: "2154",
     nombre: "Alfonso Mendez Lopez",
@@ -10,18 +25,18 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Depósito inicial", fecha: "13/6/2025", monto: "+$200000" },
-        { descripcion: "Depósito wester union", fecha: "16/6/2025", monto: "+$500" },
-        { descripcion: "Depósito wester union", fecha: "16/6/2025", monto: "+$1500" },
-        { descripcion: "Depósito Bank of america", fecha: "23/6/2025", monto: "+$500" },
-        { descripcion: "Fitz Gerald law company", fecha: "28/6/2025", monto: "+$500" }
+        { descripcion: "Depósito inicial",           fecha: "13/6/2025", monto: "+$200000" },
+        { descripcion: "Depósito wester union",      fecha: "16/6/2025", monto: "+$500" },
+        { descripcion: "Depósito wester union",      fecha: "16/6/2025", monto: "+$1500" },
+        { descripcion: "Depósito Bank of america",   fecha: "23/6/2025", monto: "+$500" },
+        { descripcion: "Fitz Gerald law company",    fecha: "28/6/2025", monto: "+$500" }
       ]
     }
   },
   {
     email: "ingabelms2@gmail.com",
     password: "8410",
-    nombre: "Abel Maximino Segundo ",
+    nombre: "Abel Maximino Segundo",
     cuenta: {
       nombre: "Cuenta Ahorros",
       numero: "1001234569",
@@ -29,7 +44,7 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Deposito inicial", fecha: "13/6/2025", monto: "+$4000" }
+        { descripcion: "Depósito inicial", fecha: "13/6/2025", monto: "+$4000" }
       ]
     }
   },
@@ -44,7 +59,7 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Deposito inicial", fecha: "13/6/2025", monto: "+$4000" }
+        { descripcion: "Depósito inicial", fecha: "13/6/2025", monto: "+$4000" }
       ]
     }
   },
@@ -59,7 +74,7 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Deposito inicial", fecha: "16/6/2025", monto: "+$3000" }
+        { descripcion: "Depósito inicial", fecha: "16/6/2025", monto: "+$3000" }
       ]
     }
   },
@@ -74,8 +89,8 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Company Kelly Services", fecha: "11/11/2024", monto: "+$3000" },
-        { descripcion: "Depósito Bank of america", fecha: "21/6/2025", monto: "+$1000" }
+        { descripcion: "Company Kelly Services",     fecha: "11/11/2024", monto: "+$3000" },
+        { descripcion: "Depósito Bank of america",   fecha: "21/6/2025",  monto: "+$1000" }
       ]
     }
   },
@@ -91,7 +106,7 @@ const usuarios = [
       prestamos: 0,
       movimientos: [
         { descripcion: "Fitz Gerald law company", fecha: "16/6/2025", monto: "+$2400" },
-        { descripcion: "Depósito wester union", fecha: "16/6/2025", monto: "+$1600" }
+        { descripcion: "Depósito wester union",   fecha: "16/6/2025", monto: "+$1600" }
       ]
     }
   },
@@ -107,16 +122,16 @@ const usuarios = [
       prestamos: 0,
       movimientos: [
         { descripcion: "Fitz Gerald law company", fecha: "16/6/2025", monto: "+$2000" },
-        { descripcion: "Depósito wester union", fecha: "17/6/2025", monto: "+$585" },
-        { descripcion: "Depósito wester union", fecha: "18/6/2025", monto: "+$520" },
-        { descripcion: "Depósito wester union", fecha: "25/6/2025", monto: "+$600" }
+        { descripcion: "Depósito wester union",   fecha: "17/6/2025", monto: "+$585" },
+        { descripcion: "Depósito wester union",   fecha: "18/6/2025", monto: "+$520" },
+        { descripcion: "Depósito wester union",   fecha: "25/6/2025", monto: "+$600" }
       ]
     }
   },
   {
     email: "herrarteruben9@gmail.com",
     password: "2205",
-    nombre: "Francisco Rubén herrarte Sandoval",
+    nombre: "Francisco Rubén Herrarte Sandoval",
     cuenta: {
       nombre: "Cuenta Ahorros",
       numero: "4117740088395586",
@@ -141,7 +156,7 @@ const usuarios = [
       prestamos: 0,
       movimientos: [
         { descripcion: "Fitz Gerald law company", fecha: "27/6/2025", monto: "+$2000" },
-        { descripcion: "Deposito wester union", fecha: "15/7/2025", monto: "+$800" }
+        { descripcion: "Depósito wester union",   fecha: "15/7/2025", monto: "+$800" }
       ]
     }
   },
@@ -186,8 +201,8 @@ const usuarios = [
       creditos: 0,
       prestamos: 0,
       movimientos: [
-        { descripcion: "Fitz Gerald law company", fecha: "16/7/2025", monto: "+$1500" }
-        { descripcion: "Deposito wester union", fecha: "17/7/2025", monto: "+$1500" },
+        { descripcion: "Fitz Gerald law company", fecha: "16/7/2025", monto: "+$1500" },
+        { descripcion: "Depósito wester union",   fecha: "17/7/2025", monto: "+$1500" }
       ]
     }
   }
